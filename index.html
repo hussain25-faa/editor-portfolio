@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="Cinematic video editing, social reels, and promotional films." />
+  <title>FRAME / CUT — Video Editor</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23d7ff3f'/%3E%3Ctext x='16' y='22' font-family='Arial,Helvetica,sans-serif' font-size='15' font-weight='800' text-anchor='middle' fill='%230a0a0a'%3EF/%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%23d7ff3f'/%3E%3Ctext x='90' y='118' font-family='Arial,Helvetica,sans-serif' font-size='84' font-weight='800' text-anchor='middle' fill='%230a0a0a'%3EF/%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Frame Cut home">
+      <span class="brand-mark">F/</span><span>FRAME<span class="brand-muted">CUT</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link nav-contact">Contact <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: 3D tunnel -->
+    <section class="hero" id="home">
+      <div class="tunnel" id="tunnel">
+        <div class="tunnel-bg grid"></div>
+        <div class="tunnel-bg glow"></div>
+        <div class="ring ring-a"></div>
+        <div class="ring ring-b"></div>
+
+        <div class="tunnel-title" id="tunnelTitle">
+          <p class="tunnel-eyebrow" id="heroEyebrow"></p>
+          <h1 id="heroTitle"></h1>
+          <p class="tunnel-sub" id="heroSub"></p>
+        </div>
+
+        <div class="tunnel-plane" id="tunnelPlane"></div>
+
+        <div class="scroll-prompt" id="scrollPrompt"><span>Scroll to explore</span><i></i></div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">01 / SELECTED WORK</p>
+          <h2>THE <span class="outline-text">CUTS.</span></h2>
+        </div>
+        <p class="section-note">A few frames from the stories, brands<br>and campaigns brought to life.</p>
+      </div>
+      <div class="filter-row" id="filterRow" role="group" aria-label="Filter projects"></div>
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">02 / WHAT I DO</p>
+          <h2>BUILT FOR<br><span class="outline-text">THE FEED.</span></h2>
+        </div>
+        <p class="section-note">From a scroll-stopping short to a full campaign,<br>every edit has a reason to exist.</p>
+      </div>
+      <div class="service-list" id="serviceList"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-stamp">FRAME<br>BY<br>FRAME<span>✳</span></div>
+      <div class="reveal">
+        <p class="eyebrow">03 / BEHIND THE TIMELINE</p>
+        <h2>GOOD EDITING<br>IS <span class="accent-text">INVISIBLE.</span><br>GREAT EDITING<br>IS <span class="outline-text">UNFORGETTABLE.</span></h2>
+        <p class="about-text" id="aboutText"></p>
+        <a class="text-link" href="#contact">Have a project in mind? <span>↗</span></a>
+      </div>
+      <div class="about-meta">
+        <span>BASED IN INDIA</span><span>REMOTE WORLDWIDE</span><span>BUILT ON DETAILS</span>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">04 / SIMPLE INDIAN PRICING</p>
+          <h2>GOOD WORK.<br><span class="outline-text">CLEAR RATES.</span></h2>
+        </div>
+        <p class="section-note">Starting estimates in INR. Final quotes depend<br>on footage, duration and complexity.</p>
+      </div>
+      <div class="pricing-grid" id="pricingGrid"></div>
+      <p class="pricing-footnote">Prices are starting estimates, not fixed offers. GST, rush delivery, stock assets and extensive revisions may cost extra.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-top">
+        <span class="eyebrow" style="margin:0">05 / YOUR TURN</span>
+        <span class="live"><i class="dot"></i> OPEN FOR SELECT PROJECTS</span>
+      </div>
+      <h2 id="contactTitle"></h2>
+      <div class="contact-bottom">
+        <p id="contactText"></p>
+        <a class="contact-email" id="emailLink" href="#"></a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="cfName">Name <b>*</b></label>
+          <input id="cfName" name="name" type="text" autocomplete="name" placeholder="Your name" />
+          <small class="err" data-err="name"></small>
+        </div>
+
+        <div class="field">
+          <label for="cfEmail">Email <b>*</b></label>
+          <input id="cfEmail" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" />
+          <small class="err" data-err="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="cfPhone">WhatsApp / Phone</label>
+          <input id="cfPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 90000 00000" />
+          <small class="err" data-err="phone"></small>
+        </div>
+
+        <div class="field">
+          <label for="cfService">Service <b>*</b></label>
+          <select id="cfService" name="service">
+            <option value="">Select a service</option>
+            <option value="video-editing">Video Editing</option>
+            <option value="motion-design">reels @ shorts</option>
+            <option value="animation">promotional videos</option>
+          </select>
+          <small class="err" data-err="service"></small>
+        </div>
+
+        <div class="field">
+          <label for="cfBudget">Budget</label>
+          <select id="cfBudget" name="budget">
+            <option value="">Select a range</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cfDeadline">Deadline</label>
+          <input id="cfDeadline" name="deadline" type="date" />
+        </div>
+
+        <div class="field full">
+          <label for="cfMessage">Project details <b>*</b></label>
+          <textarea id="cfMessage" name="message" rows="5" placeholder="Tell me about your footage, the platform, the vibe and what success looks like."></textarea>
+          <small class="err" data-err="message"></small>
+        </div>
+
+        <div class="form-actions full">
+          <button type="submit" class="btn btn-primary" id="sendWa">Send on WhatsApp <span>↗</span></button>
+          <button type="button" class="btn" id="sendMail">Send by email</button>
+        </div>
+        <p class="form-status full" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-links">
+        <a id="instagramLink" href="#" target="_blank" rel="noopener">Instagram ↗</a>
+        <a id="whatsappLink" href="#" target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark">F/</span><span>FRAME<span class="brand-muted">CUT</span></span></a>
+    <span>INDEPENDENT BY DESIGN.</span>
+    <span>© <span id="year"></span> FRAME / CUT</span>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Video preview">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close video">×</button>
+    <video id="modalVideo" controls playsinline></video>
+    <p id="modalCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
