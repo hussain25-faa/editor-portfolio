@@ -454,3 +454,72 @@ img { display: block; max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+/* =================================
+   ABOUT — CIRCULAR PROFILE IMAGE
+================================= */
+
+.about-stamp {
+  position: relative;
+  width: clamp(170px, 22vw, 260px);
+  aspect-ratio: 1 / 1;
+  height: auto;
+
+  padding: 6px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #d7ff3f;
+
+  overflow: visible;
+}
+
+.about-stamp img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center 30%;
+
+  border-radius: 50%;
+  border: 4px solid #090909;
+  box-sizing: border-box;
+}
+
+/* Floating decorative star */
+.about-stamp span {
+  position: absolute;
+  right: -8px;
+  bottom: 12%;
+  z-index: 2;
+
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  border: 4px solid #090909;
+
+  background: #d7ff3f;
+  color: #090909;
+
+  font-size: 23px;
+  line-height: 1;
+}
+
+/* Responsive mobile layout */
+@media (max-width: 768px) {
+  .about-stamp {
+    width: clamp(150px, 48vw, 220px);
+    margin: 0 auto 24px;
+  }
+
+  .about-stamp span {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}

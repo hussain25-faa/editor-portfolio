@@ -10,8 +10,8 @@
 const SITE = {
   name: "FRAME / CUT",
   email: "hello@example.com",
-  instagram: "https://instagram.com/yourhandle",
-  whatsapp: "919000000000", // country code + number, digits only, no +
+  instagram: "https://www.instagram.com/black_burry_dom?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==",
+  whatsapp: "916383795315", // country code + number, digits only, no +
   hero: {
     eyebrow: "Warp Drive Sequence",
     title: ["MADE TO", "MAKE YOU", "LOOK."],
@@ -28,12 +28,12 @@ const SITE = {
 
 // category must be: "reels" | "ads" | "brand"
 const PROJECTS = [
-  { title: "cheap @ best",       type: "Footwear Reel",      category: "reels", year: "2026", poster: "assests/images/foot.png",  video: "assests/videos/footwear.mp4" },
-  { title: "suriya cafe",      type: "Lifestyle Reel",     category: "reels",   year: "2026", poster: "assests/images/tea.png", video: "assests/videos/teashop.mp4" },
-  { title: "divora jewellery",       type: "Product Promotion",    category: "reels", year: "2026", poster: "assests/images/dicora.png",     video: "assests/videos/divora.mp4" },
-  { title: "The New Standard",  type: "Brand Film",        category: "brand", year: "2025", poster: "assets/images/brand-film.jpg",    video: "assets/videos/brand-film.mp4" },
-  { title: "City In Motion",    type: "Travel Reel",       category: "reels", year: "2025", poster: "assets/images/travel-film.jpg",   video: "assets/videos/travel-film.mp4" },
-  { title: "Drop One",          type: "Campaign Film",     category: "ads",   year: "2025", poster: "assets/images/campaign.jpg",      video: "assets/videos/campaign.mp4" },
+  { title: "cheap @ best",      type: "Footwear Reel",      category: "reels", year: "2026", poster: "assests/images/foot.png",  video: "assests/videos/footwear.mp4" },
+  { title: "suriya cafe",       type: "Lifestyle Reel",     category: "reels",   year: "2026", poster: "assests/images/tea.png", video: "assests/videos/teashop.mp4" },
+  { title: "divora jewellery",  type: "Product Promotion",    category: "reels", year: "2026", poster: "assests/images/dicora.png",     video: "assests/videos/divora.mp4" },
+  { title: "editing time",  type: "video editing",        category: "brand", year: "2025", poster: "assests/images/Screenshot 2026-10-27 212128.png",    video: "assests/videos/imthi.mp4" },
+  { title: "personal edit",    type: "bike edit",       category: "reels", year: "2025", poster: "assests/images/Screenshot 2026-10-27 212228.png",   video: "assests/videos/bike.mp4" },
+  { title: "cheap @ best",          type: "footwear",     category: "ads",   year: "2025", poster: "assests/images/Screenshot 2026-10-27 212301.png",      video: "assests/videos/foot.mp4" },
 ];
 const BUDGETS = [
   "Under ₹5,000",
